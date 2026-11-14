@@ -1,3 +1,13 @@
+:root {
+    --secondary-color: darkblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -10,7 +20,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--secondary-color);
 }
 
 main img {
@@ -19,6 +29,7 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -31,12 +42,10 @@ main {
 
 aside {
     width: 20rem;
-    margin: 5px;
-    border: 1px solid gray;
-    padding: 20px;
-    background-color: navy;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -48,4 +57,20 @@ footer {
     margin-top: 20px;
     border-top: 2px dotted green;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0/10%);
+    background-color: green;
+    color: #000;
+}
+
+.country-header {
+    position: absolute;
+    top: 25px;
+    left: 100px;
 }
